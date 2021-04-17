@@ -1,0 +1,405 @@
+/* 
+CHARTE GRAPHIQUE
+Bleu #0065FC, plus claire #DEEBFF , le gris pour le fond #F2F2F2 
+*/
+
+/* -------------------------------------
+ déclarations ciblant tous les éléments 
+---------------------------------------- */
+
+* {box-sizing: border-box;}
+
+/* ---------------------------
+    Conteneurs primaires 
+------------------------------ */
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+main
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 100%;
+}
+
+/* ---------------------------
+        Contenu du header 
+ ----------------------------*/
+header a
+{
+    text-decoration: none;
+}
+
+h1 a
+{
+    text-decoration: none;
+    color: #0065FC;
+    font-family: 'Rancho', cursive;
+    font-weight: lighter;
+    font-size: larger;
+}
+
+nav#menu
+{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+div.menu
+{
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+    color: black;
+}
+
+div.menu a:visited
+{
+    color: #000000;
+}
+
+.active
+{
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+.active a 
+{
+    color: #0065FC !important;
+}
+
+a#inscription_link
+{
+    font-weight: bold;
+    color: #0065FC !important;
+}
+
+
+
+
+
+/* ---------------------------
+Contenu de la section recherche 
+-------------------------------*/
+
+
+/* Style du container input */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* Style des icônes du formulaire  */
+.icon {
+  padding: 10px;
+  padding-top: 16px;
+  background: #F2F2F2;
+  color: black;
+  min-width: 50px;
+  text-align: center;
+  border: 1px solid #F2F2F2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* Style des champs d'entrées */
+.input-field {
+  width: 25%;
+  padding: 10px;
+  outline: none;
+  border-top: 2px solid #F2F2F2;
+  border-bottom: 2px solid #F2F2F2;
+  border-left: none;
+  border-right: none;
+}
+
+.input-field:focus {
+  border: 2px solid #0065FC;
+}
+
+/* Style du bouton submit */
+.btn {
+  background-color: #0065FC;
+  color: white;
+  padding: 15px 15px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top: 5px solid #0065FC;
+  border-bottom: 5px solid #0065FC;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* Conteneur du titre "Filtres" et des boutons filtres */
+
+div#filtres
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+div#titleFiltres
+{
+    padding-right: 1%;
+}
+
+div#listeFiltres
+{
+    display: flex;
+    justify-content: space-between;
+    width: 58%;
+}
+
+.filtres_container
+{
+    width: 23.5%;
+}
+
+.filtres
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid #F2F2F2;
+    background-color: white;
+    padding-right: 2%;
+}
+
+#btn_animal
+{
+    padding-left: 25%;
+}
+
+.btn-icon
+{
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    text-align: center;
+    color: #0065FC;
+    position: absolute;
+}
+
+#message_info
+{
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.info
+{
+    padding-top: 2px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    background-color:white;
+    text-align: center;
+    color: #0065FC;
+  
+}
+
+/* ---------------------------------------------
+contenu principal (contenu de la balise main)
+------------------------------------------------ */
+
+/* Section Hébergements */
+#hebergements
+{
+    width: 65%;
+    border-radius: 15px;
+}
+
+#herbergements_title
+{
+    width: 100%;
+    margin-left: 2%;
+}
+
+#afficher_plus
+{
+    width: 100%;
+    margin-left: 2%;
+}
+
+#cards_up
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#cards_down
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card
+{
+    width: 31%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px rgb(202, 202, 202);
+    padding: 5px;
+    font-size: small;
+    line-height: 1em;
+}
+
+.card img
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card a
+{
+    text-decoration: none;
+    color: #000000;
+}
+.media-body
+{
+    background-color: white;
+}
+
+.fas
+{
+    color: #0065FC;
+}
+.noir
+{
+    color: #000000;
+}
+
+.grise {
+    color: #F2F2F2;
+}
+
+/* Section Populaires */
+#populaires
+{
+    width: 32.5%;
+    border-radius: 15px;
+}
+
+#populaire_header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#populaires, #hebergements, footer
+{
+    background-color: #F2F2F2;
+}
+
+#hebergements
+{
+    padding: 1%;
+}
+
+#populaires
+{
+    padding: 2%;
+}
+
+.popular-card
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: white;
+    padding-left: 3px;
+    padding-top: 3px;
+    box-shadow: 1px 1px 12px rgb(202, 202, 202);
+}
+.popular-card-body
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2em;
+    font-size: smaller;
+    padding-left: 15px;
+}
+
+.popular-card img
+{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+/* Section Activités */
+
+
+
+
+/* --------------------   
+    Contenu du footer 
+----------------------- */
+
+footer ul li
+{
+    list-style: none;
+}
+footer ul li a
+{
+   text-decoration: none;
+}
+
+#lienHebergements, #lienAssistance, #lienApropos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+
