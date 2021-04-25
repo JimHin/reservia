@@ -377,11 +377,34 @@ contenu principal (contenu de la balise main)
 }
 /* Section Activités */
 
-.activities-cards-fullcard{
+#activities{
+    width: 100%;
+    border: 1px solid black;
+}
+#activities-cards{
+    display: flex;
+    justify-content: space-around;
+    
+    border: 1px solid blue;
+}
 
+.activities-cards-fullcard{
+    border: 1px solid red;
+    width: 25%;
+    height: 350px;
 }
 
 .activities-cards-two-cards{
+    border: 1px solid green;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    }
+.card-one{
+
+}
+.card-two{
 
 }
 
